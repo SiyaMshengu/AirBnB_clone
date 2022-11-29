@@ -116,6 +116,7 @@ class HBNBCommand(cmd.Cmd):
             key = arg[0] + '.' + arg[1]
             if key in storage.all():
                 if len(arg) > 2:
+B
                     if len(arg) == 3:
                         print('** value missing **')
                     else:
@@ -128,6 +129,7 @@ class HBNBCommand(cmd.Cmd):
                     print('** attribute name missing **')
             else:
                 print('** no instance found **')
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
